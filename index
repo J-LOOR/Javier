@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javier Loor Chong - Ventas de Computadoras</title>
+    <!-- En esta parte nnlazamos los estilos de Bootstrap (para que sea resposive) -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Aqui personalizamos los Estilos  */
+        body {
+            font-family: 'Arial', sans-serif; /* Fuentes sencillas y legibles */
+            background-color: #f4f4f9; /* Fondo claro para una apariencia limpia */
+        }
+
+        .navbar {
+            background-color: #007bff; /* Color de fondo azul para la barra de navegación */
+        }
+
+        .navbar a {
+            color: white !important; /* Coloca el texto blanco en la barra de navegación */
+        }
+
+        .hero {
+            background-image: url('https://via.placeholder.com/1500x600/007bff/ffffff?text=Bienvenido+a+Javier+Loor+Chong'); /* Imagen de fondo */
+            background-size: cover; 
+            height: 80vh; 
+            color: white; 
+            text-align: center; 
+            padding: 60px 0; 
+        }
+
+        .section-title {
+            text-align: center; 
+            margin-top: 40px;
+            color: #333; 
+        }
+
+        .section-content {
+            margin-top: 20px; /* Separación entre las secciones */
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave en las tarjetas */
+        }
+/* Aqui se centra el texto dentro de las tarjetas */
+        .card-body {
+            text-align: center; /* Aqui se centra el texto dentro de las tarjetas */
+            padding: 20px; 
+        }
+
+        .card-title {
+            font-size: 1.5rem; /* Tamaño de fuente grande para los títulos */
+            color: #007bff; /* Azul para los títulos */
+        }
+
+        .card-text {
+            color: #555; /* Texto de descripción en gris oscuro */
+        }
+
+        footer {
+            background-color: #333; /* Fondo oscuro para el pie de página */
+            color: white; /* Texto blanco */
+            text-align: center; /* Centrado del texto en el pie */
+            padding: 20px; /* Espaciado en el pie de página */
+            margin-top: 40px; /* Separación con el contenido superior */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- En esta Parte encontramos la Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Javier Loor Chong</a> <!-- Nombre de la tienda -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto"> <!-- Alineación a la derecha de los enlaces -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero aqui vemos la Pagina principal -->
+    <div class="hero">
+        <h1>Bienvenido a Javier Loor Chong</h1> <!-- Título principal -->
+        <p>Ventas de Computadoras de Alta Calidad</p>
+        <a href="#productos" class="btn btn-light btn-lg">Ver Productos</a> <!-- Botón para ir a la sección de productos -->
+    </div>
+
+    <!-- Sección de Productos -->
+    <section id="productos" class="container section-content">
+        <h2 class="section-title">Nuestros Productos</h2>
+        <div class="row">
+            <!-- Cada producto estará en una columna -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Laptop" class="card-img-top" alt="Laptop"> <!-- Imagen del producto -->
+                    <div class="card-body">
+                        <h5 class="card-title">Laptops de Alta Gama</h5>
+                        <p class="card-text">Laptops rápidas y duraderas para todo tipo de usuarios.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=PC" class="card-img-top" alt="PC"> <!-- Imagen del producto -->
+                    <div class="card-body">
+                        <h5 class="card-title">PCs de Escritorio</h5>
+                        <p class="card-text">Computadoras de escritorio potentes para trabajar y jugar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Accesorios" class="card-img-top" alt="Accesorios"> <!-- Imagen del producto -->
+                    <div class="card-body">
+                        <h5 class="card-title">Accesorios de Computadora</h5>
+                        <p class="card-text">Teclados, ratones, monitores y más.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="container section-content">
+        <h2 class="section-title">Contáctanos</h2>
+        <p>Si tienes alguna duda o pregunta, no dudes en contactarnos.</p>
+        <form>
+            <!-- Formulario de contacto -->
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3" placeholder="Tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Javier Loor Chong. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts de Bootstrap (para el funcionamiento de elementos interactivos) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- Script para compatibilidad con Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script> <!-- Popper.js para componentes como los tooltips -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+</body>
+</html>
+
